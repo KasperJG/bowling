@@ -102,7 +102,7 @@ class BowlingGameTest {
         for(int i=3; i < 20; i++){
             bowlingGame.roll(0);
         }
-        // git commit test
+        // pr test
         assertEquals(14, bowlingGame.score());
     }
 
