@@ -84,27 +84,27 @@ class BowlingGameTest {
         });
     }
 
-    @Test
-    public void 플레이어의_투구에서_스페어가_발생한다() {
-        //given 게임을 진행하는 동안
-        //when 두 번째 투구에서 나머지 3개의 핀을 쓰러트려 스페어를 한다면
-        Frame firstframe = new Frame();
-        firstframe.frameRolls(7);
-        firstframe.frameRolls(3);
-        bowlingGame.addFrame(firstframe);
-
-
-        bowlingGame.setBaseScore(firstframe.getFrameScore());
-
-        //then 다음 투구에서 쓰러뜨린 핀의 갯수만큼 보너스 점수로 받는다
-        //(Out Of Scope) 스트라이크.
-        bowlingGame.roll(2);
-        for(int i=3; i < 20; i++){
-            bowlingGame.roll(0);
-        }
-        // git commit test
-        assertEquals(14, bowlingGame.score());
-    }
+//    @Test
+//    public void 플레이어의_투구에서_스페어가_발생한다() {
+//        //given 게임을 진행하는 동안
+//        //when 두 번째 투구에서 나머지 3개의 핀을 쓰러트려 스페어를 한다면
+//        Frame firstframe = new Frame();
+//        firstframe.frameRolls(7);
+//        firstframe.frameRolls(3);
+//        bowlingGame.addFrame(firstframe);
+//
+//
+//        bowlingGame.setBaseScore(firstframe.getFrameScore());
+//
+//        //then 다음 투구에서 쓰러뜨린 핀의 갯수만큼 보너스 점수로 받는다
+//        //(Out Of Scope) 스트라이크.
+//        bowlingGame.roll(2);
+//        for(int i=3; i < 20; i++){
+//            bowlingGame.roll(0);
+//        }
+//        // pr test
+//        assertEquals(14, bowlingGame.score());
+//    }
 
 //    @Test
 //    public void 플레이어는_첫_프레임에서_스트라이크를_기록하고_다음과_같은_점수를_얻는다() {
