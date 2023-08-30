@@ -9,6 +9,7 @@ public class Frame {
         if(pins > 10 || pins < 0) throw new IllegalArgumentException();
         frameScore+=pins;
         frameRolls.add(pins);
+        //frame commit
     }
 
     public int getFrameScore(){
