@@ -81,6 +81,7 @@ class BowlingGameTest {
             // 테스트하려는 메소드 호출
             Frame frame = new Frame();
             frame.frameRolls(-1);
+            //frame
         });
     }
 
